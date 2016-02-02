@@ -13,7 +13,7 @@
 
 <div id="comments">
 <hr>
-	<h2><%= @post.comments.count %> Comments </h2>
+	<h2><%= pluralize(@post.comments.count,"Comment") %></h2>
 	<%= render @post.comments %>
 
 	<h3>Add a comment:</h3>
