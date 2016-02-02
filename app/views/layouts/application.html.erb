@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blogger</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="sidebar">
+		<!--<div id="logo">
+			<%= link_to root_path  %>
+			<%= image_tag "" %>
+		</div> -->
+	<ul>
+		<li class="category"><%= link_to "Website", root_path %></li>
+		<li><%= link_to "Blog", root_path %></li
+		>
+		<li><%= link_to "About", about_path %></li>
+	</ul>
+
+		<%= link_to "New Post", new_post_path %>
+	</div>
+
+<%= yield %>
+
+</body>
+</html>
