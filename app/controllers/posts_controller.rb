@@ -1,6 +1,11 @@
 class PostsController < ApplicationController
 	def index
+		
+	end
+
+	def blogs
 		@posts = Post.all.order('created_at DESC')
+		@posts = Post.order(:title).page(params[:page]).per(3)
 	end
 
 	def new
@@ -18,6 +23,9 @@ class PostsController < ApplicationController
 
 	def show
 		@post = Post.find(params[:id])
+	end
+
+	def edit
 	end
 
 	def destroy

@@ -1,9 +1,25 @@
-<% @posts.each do |p| %>
-	<div class="post_wrapper">
-		<h2 class="title"><%= link_to p.title, p %></h2>
-		<p class="body">
-			<%= p.body %>
-		</p>
-		<p class="date"><%= p.created_at.strftime("%B,%d,%Y")%></p>
-	</div>
-<% end %>
+<div>
+<div class="abt">
+	<b><h1 class="abt-heads">Create and Manage Your Blogs</h1></b><br>
+		<p class="abt-text">A<strong> blog</strong> is your best bet for a voice among the online crowd. It's a personal website, packed with features, as easy to use anywhere at anytime.<br>
+		At <strong>Blogger</strong> you can view old blogs, create new blogs and be part of the conversation of any blog by commenting accordingly.</p>
+</div>
+
+<div class="abt">
+	<p><b><h1 class="abt-heads">Get Feedback</h1></b><br></p>
+		<p class="abt-text">Get feedback on an idea that you want to develop further. Having an outside perspective and a little bit of constructive criticism is invaluable.</p>
+</div>
+
+<div class="abt">
+	<p><b><h1 class="abt-heads">Express Yourself</h1></b></p>
+    	<p class="abt-text">A <strong>blog</strong> is an expressive medium that can contain words, images, and sounds. Whether your blog is formal business affair or a personal “what-I-ate-for-breakfast-this-morning” diary, blogging is powerful form of self-expression.</p>
+</div> 
+
+<div class="abt">
+	<p><b><h1 class="abt-heads">Building a Network</h1></b><br></p>	
+     	<p class="abt-text">Starting a blog is a guaranteed way to expand your network.<br>
+
+		First of all, valuable and interesting blog posts attract readers who will then comment on your site and send you personal messages through your contact page.</p>
+</div>
+	<span class="bimg"><%= image_tag("bimg.jpg", size:"1316x650") %></span>
+</div>

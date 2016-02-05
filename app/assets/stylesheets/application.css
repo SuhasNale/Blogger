@@ -1,3 +1,144 @@
+body{
+	margin:0px;
+}
+
+.welcome{
+	text-align: left;
+}
+.welcome-text{
+	text-align: center;
+}
+.container{
+
+}
+.bimg-head{
+	position: absolute;
+	z-index: -1;
+}
+.logo{
+	float: left;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+.slogan{
+	width: 70%;
+	margin-left: 25%;
+	padding-top: 40px;
+	color: white;
+}
+.links{
+	
+}
+ul{
+	margin: 0px;
+}
+ul li {
+	display: inline-block;
+	padding: 10px;
+	font-size: 18px;
+	background-color: #3b5780;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+}
+
+ul li:hover{
+	background-color: grey;
+	color: #dbd9da;
+}
+
+ul li:active{
+	background-color: white;
+	color: #dbd9da;
+}
+.new_post{
+	background-color: #3b5780;
+	float: right;
+	margin-right: 35px;
+}
+.title a{
+	text-decoration: none;
+}
+.title{
+	color: #400080 !important;
+}
+.body{
+	white-space: pre-wrap;
+}
+.post{
+	margin: 10px;
+	width: 96%;
+}
+.page{
+	left: 50%;
+}
+.edit{
+	float: right;
+}
+.edit a{
+	text-decoration: none;
+	padding: 10px;
+	font-size: 18px;
+	background-color: #3b5780;
+	color: white;
+	border-radius: 60px;
+}
+.delete{
+	float: right;
+	margin-left: 10px;
+}
+.delete a{
+	text-decoration: none;
+	padding: 10px;
+	font-size: 18px;
+	background-color: #3b5780;
+	color: white;
+	border-radius: 60px;
+}
+/*INDEX*/
+.abt{
+	margin-top: 7%!important;
+	width: 30%;
+	float: left;
+	margin: 8px;
+	padding: 10px;
+	text-align: center;
+	color: #5da039;
+}
+.abt-text{
+	font-size: 16px;
+}
+.abt-heads{
+	color: white;
+	font-size: 32px;
+}
+p{
+	margin: 0px;
+	margin-left: 30px;
+}
+.bimg{
+	position: absolute;
+	left: 0px;
+	z-index: -1;
+	top: 196px;
+	opacity: 0.9;
+}
+/*BLOGS
+.body{
+	white-space: nowrap;
+	width: 90%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	border: 1px solid grey;
+	padding: 10px;
+}
+.body:active{
+	overflow: inherit;
+}*/
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

@@ -7,19 +7,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div id="sidebar">
-		<!--<div id="logo">
-			<%= link_to root_path  %>
-			<%= image_tag "" %>
-		</div> -->
-	<ul>
-		<li class="category"><%= link_to "Website", root_path %></li>
-		<li><%= link_to "Blog", root_path %></li
-		>
-		<li><%= link_to "About", about_path %></li>
-	</ul>
-
-		<%= link_to "New Post", new_post_path %>
+	<div class="header">
+		<span class="bimg-head"><%= image_tag("head_img.jpg", size: "1316x200") %></span>
+		<div>
+			
+			<div class="logo">
+				<p><%= link_to image_tag("icon.jpg", size: "90x90"), root_path %>
+				<br> What's your Story...?? </p>
+			</div>
+			<div class="slogan">
+				<h1 class="welcome">Welcome to Blogger <br></h1>
+				<h2 class="welcome-text">Right here, right now....Write away....!!!!!</h2>
+			</div>
+		</div>
+	
+		
+		<div class="links">
+			<ul>
+				<li><%= link_to "Blogs", blogs_path %></li>
+				<li><%= link_to "About", about_path %></li>
+				<li class="new_post"><%= link_to "New Post", new_post_path %></li>
+			</ul>
+		</div> 
 	</div>
 
 <%= yield %>
